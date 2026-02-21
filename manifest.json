@@ -1,0 +1,9 @@
+{
+  "name": "Red Rising Engine",
+  "short_name": "RR Engine",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#000000",
+  "theme_color": "#b30000",
+  "icons": []
+}
