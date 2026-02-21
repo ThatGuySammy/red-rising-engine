@@ -5,15 +5,45 @@
   <title>Red Rising Engine</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="manifest" href="manifest.json">
+  <meta name="theme-color" content="#b30000">
+
+  <style>
+    body {
+      background: #111;
+      color: #eee;
+      font-family: monospace;
+      padding: 20px;
+    }
+    button {
+      padding: 10px;
+      margin-top: 15px;
+      background: #b30000;
+      color: white;
+      border: none;
+      font-size: 16px;
+    }
+    .stat {
+      margin: 8px 0;
+    }
+  </style>
 </head>
 <body>
-  <h1>RED RISING ENGINE</h1>
-  <p>Engine is active.</p>
 
-  <script>
-    if ('serviceWorker' in navigator) {
-      navigator.serviceWorker.register('sw.js');
-    }
-  </script>
+<h1>RED RISING ENGINE</h1>
+
+<div class="stat">Turn: <span id="turn"></span></div>
+<div class="stat">Phase: <span id="phase"></span></div>
+<div class="stat">Rage: <span id="rage"></span></div>
+<div class="stat">Hope: <span id="hope"></span></div>
+
+<button id="nextTurn">Advance Turn</button>
+
+<script src="app.js"></script>
+<script>
+  if ('serviceWorker' in navigator) {
+    navigator.serviceWorker.register('sw.js');
+  }
+</script>
+
 </body>
 </html>
